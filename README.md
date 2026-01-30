@@ -57,3 +57,11 @@ Place the project folder anywhere you want.
 ```bash
 python -m venv venv
 venv\Scripts\activate
+```
+
+### 3) Start the server
+```bash
+pip install django
+python manage.py migrate
+python manage.py runserver
+```
