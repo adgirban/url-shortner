@@ -1,0 +1,11 @@
+{% extends 'short/layout.html' %}
+
+{% block content %}
+
+<h2>Link Expired</h2>
+<p>This short URL has expired.</p>
+<p>Key: {{ obj.short_key }}</p>
+  <button class="btn btn-warning"><a href="/" class="link-light link-underline link-underline-opacity-0">Go Back</a></button>
+
+
+{% endblock %}

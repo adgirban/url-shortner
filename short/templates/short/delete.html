@@ -1,0 +1,16 @@
+{% extends 'short/layout.html' %}
+
+{% block content %}
+
+<h1>Delete Short URL</h1>
+<h5>Short key: {{ obj.short_key }}</h5>
+<h5>Original: {{ obj.original_url }}</h5>
+
+<form method="post">
+  {% csrf_token %}
+  <button type="submit" class="btn btn-danger">Yes, delete</button>
+  <button class="btn btn-warning"><a href="{% url 'dashboard' %}" class="link-light link-underline link-underline-opacity-0">Cancel</a></button>
+</form>
+
+
+{% endblock %}

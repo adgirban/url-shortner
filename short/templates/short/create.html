@@ -1,0 +1,16 @@
+
+{% extends 'short/layout.html' %}
+
+{% block content %}
+
+<h2>Create Short URL</h2>
+
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-success">Create</button>
+  <button class="btn btn-primary"><a href="{% url 'dashboard' %}" class="link-light link-underline link-underline-opacity-0">Back</a></button>
+</form>
+
+
+{% endblock %}
